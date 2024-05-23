@@ -3,11 +3,12 @@
 import { links } from '@/lib/data';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useState } from 'react';
+
 import { clsx } from 'clsx';
+import useActiveSectionContext from '@/hooks/useActiveSection';
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState('Home');
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
     <header className="relative z-[999] ">
