@@ -14,25 +14,18 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>('Home');
+  const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
   return (
     <ActiveSectionContext.Provider
       value={{
         activeSection,
         setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
       }}
     >
       {children}
     </ActiveSectionContext.Provider>
   );
-}
-
-function useActiveSection() {
-  const context = React.useContext(ActiveSectionContext);
-  if (context === undefined) {
-    throw new Error(
-      'useActiveSection must be used within a ActiveSectionContextProvider',
-    );
-  }
-  return context;
 }
