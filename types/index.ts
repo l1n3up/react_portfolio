@@ -18,3 +18,8 @@ export type ActiveSectionContextType = {
 export type useSectionInViewProps = {
   sectionName: SectionName;
 };
+
+export type ContactFormEmailProps = {
+  message: string;
+  senderEmail: string;
+};

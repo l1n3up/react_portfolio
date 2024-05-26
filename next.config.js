@@ -9,7 +9,7 @@ const nextConfig = {
             hostname: 'images.unsplash.com',
         }        
     ],
-    }
+    },
 }
 
 module.exports = nextConfig
