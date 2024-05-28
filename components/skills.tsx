@@ -5,7 +5,6 @@ import SectionHeading from './section-heading';
 import { skillsData } from '@/lib/data';
 import useSectionInView from '@/hooks/useSectionInView';
 import { motion } from 'framer-motion';
-import { init } from 'next/dist/compiled/webpack/webpack';
 
 const fadeInAnimationVariants = {
   initial: { opacity: 0, y: 100 },

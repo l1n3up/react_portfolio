@@ -1,8 +1,8 @@
 'use client';
 
 import { useTheme } from '@/hooks/useTheme';
-import { Theme } from '@/types/index';
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 import { BsMoon, BsSun } from 'react-icons/bs';
 
 export default function ThemeSwitch() {
