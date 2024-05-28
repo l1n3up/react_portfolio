@@ -43,7 +43,7 @@ export default function Contact() {
         className="mt-10 flex flex-col dark-text:black"
       >
         <input
-          className="h-14 rounded-lg borderBlack px-4 dark:opacity-80 dark:focus:opacity-100 transition-all dark:outline-none"
+          className="h-14 rounded-lg borderBlack px-4 dark:opacity-80 dark:focus:opacity-100 transition-all dark:outline-none dark:text-gray-950"
           type="email"
           name="senderEmail"
           required
@@ -51,7 +51,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:opacity-80 dark:focus:opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:opacity-80 dark:focus:opacity-100 transition-all dark:outline-none dark:text-gray-950"
           name="message"
           placeholder="Your message"
           required
